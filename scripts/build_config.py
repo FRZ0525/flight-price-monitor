@@ -17,6 +17,20 @@ def main():
     ap.add_argument("--output", default="config.yaml")
     args = ap.parse_args()
 
+    # Fork defaults: Hangzhou ↔ Guangzhou, Dec 2026, ¥300 alert
+    # (GitHub Actions schedule falls back to upstream placeholders; remap them here.)
+    if args.from_code == "LZO" and args.to_code == "BJS":
+        args.from_code, args.from_name = "HGH", "杭州"
+        args.to_code, args.to_name = "CAN", "广州"
+        if args.dates.startswith("2026-09-30"):
+            args.dates = "2026-12-11,2026-12-12"
+        if args.return_dates.strip() in ("", "2026-10-06"):
+            args.return_dates = "2026-12-13,2026-12-14"
+        if args.threshold == 0:
+            args.threshold = 300
+        if args.platforms == "fliggy,tuniu,qunar,tongcheng":
+            args.platforms = "fliggy,tuniu,qunar,tongcheng,ctrip"
+
     depart = [d.strip() for d in args.dates.split(",") if d.strip()]
     returns = [d.strip() for d in args.return_dates.split(",") if d.strip()]
     platforms = [p.strip() for p in args.platforms.split(",") if p.strip()]
