@@ -1,72 +1,178 @@
 {
-  "generated_at": "2026-10-29T11:06:17.026180Z",
-  "source": "actions-run-40860628633-reconstructed-from-logs",
-  "routes": [
-    {
-      "from": "HGH",
-      "from_name": "杭州",
-      "to": "CAN",
-      "to_name": "广州",
-      "dates": {
-        "2026-12-11": {
-          "best": {
-            "platform": "tongcheng",
-            "price": 529
-          },
-          "by_platform": {
-            "tongcheng": 529
-          }
-        },
-        "2026-12-12": {
-          "best": {
-            "platform": "qunar",
-            "price": 420
-          },
-          "by_platform": {
-            "qunar": 420,
-            "tongcheng": 429
-          }
-        }
+  "ok": true,
+  "data": {
+    "query": {
+      "from": {
+        "code": "HGH",
+        "name": "杭州"
       },
-      "cheapest_date": "2026-12-12",
-      "cheapest_price": 420,
-      "cheapest_platform": "qunar"
+      "to": {
+        "code": "CAN",
+        "name": "广州"
+      },
+      "depart_dates": [
+        "2026-12-11",
+        "2026-12-12"
+      ],
+      "return_dates": [
+        "2026-12-13",
+        "2026-12-14"
+      ],
+      "platforms": [
+        "ctrip",
+        "fliggy",
+        "qunar",
+        "tongcheng",
+        "tuniu"
+      ],
+      "threshold": 300,
+      "query_time": "2026-10-29 11:06:59"
     },
-    {
-      "from": "CAN",
-      "from_name": "广州",
-      "to": "HGH",
-      "to_name": "杭州",
-      "dates": {
-        "2026-12-13": {
-          "best": {
-            "platform": "qunar",
-            "price": 330
-          },
-          "by_platform": {
-            "qunar": 330,
-            "tongcheng": 330
-          }
-        },
-        "2026-12-14": {
-          "best": {
-            "platform": "qunar",
-            "price": 340
-          },
-          "by_platform": {
-            "qunar": 340,
-            "tongcheng": 340
-          }
-        }
+    "results": [
+      {
+        "platform": "tongcheng",
+        "from": "HGH",
+        "to": "CAN",
+        "date": "2026-12-11",
+        "price": 529.0,
+        "airline": "",
+        "flight_no": "",
+        "depart_time": "",
+        "arrive_time": "",
+        "fetched_at": "2026-10-29 11:06:59"
       },
-      "cheapest_date": "2026-12-13",
-      "cheapest_price": 330,
-      "cheapest_platform": "qunar"
-    }
-  ],
-  "notes": [
-    "fliggy/tuniu returned no prices in Actions",
-    "ctrip pages opened but no parsed min price in logs",
-    "alert threshold 300 not met; no Server酱 push expected"
-  ]
+      {
+        "platform": "qunar",
+        "from": "HGH",
+        "to": "CAN",
+        "date": "2026-12-12",
+        "price": 420.0,
+        "airline": "",
+        "flight_no": "",
+        "depart_time": "",
+        "arrive_time": "",
+        "fetched_at": "2026-10-29 11:06:59"
+      },
+      {
+        "platform": "tongcheng",
+        "from": "HGH",
+        "to": "CAN",
+        "date": "2026-12-12",
+        "price": 429.0,
+        "airline": "",
+        "flight_no": "",
+        "depart_time": "",
+        "arrive_time": "",
+        "fetched_at": "2026-10-29 11:06:59"
+      },
+      {
+        "platform": "qunar",
+        "from": "CAN",
+        "to": "HGH",
+        "date": "2026-12-13",
+        "price": 330.0,
+        "airline": "",
+        "flight_no": "",
+        "depart_time": "",
+        "arrive_time": "",
+        "fetched_at": "2026-10-29 11:06:59"
+      },
+      {
+        "platform": "tongcheng",
+        "from": "CAN",
+        "to": "HGH",
+        "date": "2026-12-13",
+        "price": 330.0,
+        "airline": "",
+        "flight_no": "",
+        "depart_time": "",
+        "arrive_time": "",
+        "fetched_at": "2026-10-29 11:06:59"
+      },
+      {
+        "platform": "qunar",
+        "from": "CAN",
+        "to": "HGH",
+        "date": "2026-12-14",
+        "price": 340.0,
+        "airline": "",
+        "flight_no": "",
+        "depart_time": "",
+        "arrive_time": "",
+        "fetched_at": "2026-10-29 11:06:59"
+      },
+      {
+        "platform": "tongcheng",
+        "from": "CAN",
+        "to": "HGH",
+        "date": "2026-12-14",
+        "price": 340.0,
+        "airline": "",
+        "flight_no": "",
+        "depart_time": "",
+        "arrive_time": "",
+        "fetched_at": "2026-10-29 11:06:59"
+      }
+    ],
+    "summary": [
+      {
+        "from": "CAN",
+        "to": "HGH",
+        "date": "2026-12-13",
+        "per_platform": {
+          "qunar": 330.0,
+          "tongcheng": 330.0
+        },
+        "min_price": 330.0,
+        "best_platform": "qunar",
+        "best_flight": "",
+        "best_depart_time": "",
+        "best_arrive_time": ""
+      },
+      {
+        "from": "CAN",
+        "to": "HGH",
+        "date": "2026-12-14",
+        "per_platform": {
+          "qunar": 340.0,
+          "tongcheng": 340.0
+        },
+        "min_price": 340.0,
+        "best_platform": "qunar",
+        "best_flight": "",
+        "best_depart_time": "",
+        "best_arrive_time": ""
+      },
+      {
+        "from": "HGH",
+        "to": "CAN",
+        "date": "2026-12-11",
+        "per_platform": {
+          "tongcheng": 529.0
+        },
+        "min_price": 529.0,
+        "best_platform": "tongcheng",
+        "best_flight": "",
+        "best_depart_time": "",
+        "best_arrive_time": ""
+      },
+      {
+        "from": "HGH",
+        "to": "CAN",
+        "date": "2026-12-12",
+        "per_platform": {
+          "qunar": 420.0,
+          "tongcheng": 429.0
+        },
+        "min_price": 420.0,
+        "best_platform": "qunar",
+        "best_flight": "",
+        "best_depart_time": "",
+        "best_arrive_time": ""
+      }
+    ],
+    "trend": {},
+    "generated_at": "2026-10-29T11:06:59.335010Z",
+    "notes": "Reconstructed from Actions run 40860628633 logs after commit step failed; fliggy/tuniu/ctrip had no parsed prices."
+  }
 }
