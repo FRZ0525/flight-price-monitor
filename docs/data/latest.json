@@ -1,0 +1,72 @@
+{
+  "generated_at": "2026-10-29T11:06:17.026180Z",
+  "source": "actions-run-40860628633-reconstructed-from-logs",
+  "routes": [
+    {
+      "from": "HGH",
+      "from_name": "杭州",
+      "to": "CAN",
+      "to_name": "广州",
+      "dates": {
+        "2026-12-11": {
+          "best": {
+            "platform": "tongcheng",
+            "price": 529
+          },
+          "by_platform": {
+            "tongcheng": 529
+          }
+        },
+        "2026-12-12": {
+          "best": {
+            "platform": "qunar",
+            "price": 420
+          },
+          "by_platform": {
+            "qunar": 420,
+            "tongcheng": 429
+          }
+        }
+      },
+      "cheapest_date": "2026-12-12",
+      "cheapest_price": 420,
+      "cheapest_platform": "qunar"
+    },
+    {
+      "from": "CAN",
+      "from_name": "广州",
+      "to": "HGH",
+      "to_name": "杭州",
+      "dates": {
+        "2026-12-13": {
+          "best": {
+            "platform": "qunar",
+            "price": 330
+          },
+          "by_platform": {
+            "qunar": 330,
+            "tongcheng": 330
+          }
+        },
+        "2026-12-14": {
+          "best": {
+            "platform": "qunar",
+            "price": 340
+          },
+          "by_platform": {
+            "qunar": 340,
+            "tongcheng": 340
+          }
+        }
+      },
+      "cheapest_date": "2026-12-13",
+      "cheapest_price": 330,
+      "cheapest_platform": "qunar"
+    }
+  ],
+  "notes": [
+    "fliggy/tuniu returned no prices in Actions",
+    "ctrip pages opened but no parsed min price in logs",
+    "alert threshold 300 not met; no Server酱 push expected"
+  ]
+}
