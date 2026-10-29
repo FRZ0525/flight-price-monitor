@@ -72,6 +72,8 @@ def main():
         "  timeout_seconds: 45",
         "  delay_min: 5",
         "  delay_max: 15",
+        "  fliggy_max_poll: 2",
+        "  tuniu_max_poll: 3",
         '  user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"',
         '  mobile_user_agent: ""',
         "  debug: false",
