@@ -3,29 +3,41 @@
   "data": {
     "query": {
       "from": {
-        "code": "CAN",
-        "name": "CAN"
+        "code": "HGH",
+        "name": "HGH"
       },
       "to": {
-        "code": "CAN",
-        "name": "CAN"
+        "code": "HGH",
+        "name": "HGH"
       },
       "depart_dates": [
-        "2026-12-13",
-        "2026-12-14"
+        "2026-12-11",
+        "2026-12-12"
       ],
       "return_dates": [
-        "2026-12-13",
-        "2026-12-14"
+        "2026-12-11",
+        "2026-12-12"
       ],
       "platforms": [
         "qunar",
         "tongcheng"
       ],
       "threshold": 0,
-      "query_time": "2026-10-31 22:28:58"
+      "query_time": "2026-11-01 07:25:09"
     },
     "results": [
+      {
+        "platform": "qunar",
+        "from": "HGH",
+        "to": "CAN",
+        "date": "2026-12-12",
+        "price": 420.0,
+        "airline": "",
+        "flight_no": "",
+        "depart_time": "",
+        "arrive_time": "",
+        "fetched_at": "2026-11-01 07:17:50"
+      },
       {
         "platform": "tongcheng",
         "from": "HGH",
@@ -36,7 +48,7 @@
         "flight_no": "",
         "depart_time": "",
         "arrive_time": "",
-        "fetched_at": "2026-10-31 22:22:15"
+        "fetched_at": "2026-11-01 07:18:11"
       },
       {
         "platform": "tongcheng",
@@ -48,7 +60,19 @@
         "flight_no": "",
         "depart_time": "",
         "arrive_time": "",
-        "fetched_at": "2026-10-31 22:22:37"
+        "fetched_at": "2026-11-01 07:18:37"
+      },
+      {
+        "platform": "qunar",
+        "from": "CAN",
+        "to": "HGH",
+        "date": "2026-12-13",
+        "price": 330.0,
+        "airline": "",
+        "flight_no": "",
+        "depart_time": "",
+        "arrive_time": "",
+        "fetched_at": "2026-11-01 07:24:06"
       },
       {
         "platform": "qunar",
@@ -60,7 +84,7 @@
         "flight_no": "",
         "depart_time": "",
         "arrive_time": "",
-        "fetched_at": "2026-10-31 22:28:18"
+        "fetched_at": "2026-11-01 07:24:15"
       },
       {
         "platform": "tongcheng",
@@ -72,7 +96,7 @@
         "flight_no": "",
         "depart_time": "",
         "arrive_time": "",
-        "fetched_at": "2026-10-31 22:28:38"
+        "fetched_at": "2026-11-01 07:24:42"
       },
       {
         "platform": "tongcheng",
@@ -84,7 +108,7 @@
         "flight_no": "",
         "depart_time": "",
         "arrive_time": "",
-        "fetched_at": "2026-10-31 22:28:58"
+        "fetched_at": "2026-11-01 07:25:09"
       }
     ],
     "summary": [
@@ -93,10 +117,11 @@
         "to": "HGH",
         "date": "2026-12-13",
         "per_platform": {
+          "qunar": 330.0,
           "tongcheng": 330.0
         },
         "min_price": 330.0,
-        "best_platform": "tongcheng",
+        "best_platform": "qunar",
         "best_flight": "",
         "best_depart_time": "",
         "best_arrive_time": ""
@@ -133,55 +158,68 @@
         "to": "CAN",
         "date": "2026-12-12",
         "per_platform": {
+          "qunar": 420.0,
           "tongcheng": 429.0
         },
-        "min_price": 429.0,
-        "best_platform": "tongcheng",
+        "min_price": 420.0,
+        "best_platform": "qunar",
         "best_flight": "",
         "best_depart_time": "",
         "best_arrive_time": ""
       }
     ],
     "trend": {
+      "2026-12-12": {
+        "qunar": [
+          {
+            "t": "2026-11-01 07:17:50",
+            "v": 420.0
+          }
+        ],
+        "tongcheng": [
+          {
+            "t": "2026-11-01 07:18:37",
+            "v": 429.0
+          }
+        ]
+      },
       "2026-12-11": {
         "tongcheng": [
           {
-            "t": "2026-10-31 22:22:15",
+            "t": "2026-11-01 07:18:11",
             "v": 529.0
           }
         ]
       },
-      "2026-12-12": {
+      "2026-12-13": {
+        "qunar": [
+          {
+            "t": "2026-11-01 07:24:06",
+            "v": 330.0
+          }
+        ],
         "tongcheng": [
           {
-            "t": "2026-10-31 22:22:37",
-            "v": 429.0
+            "t": "2026-11-01 07:24:42",
+            "v": 330.0
           }
         ]
       },
       "2026-12-14": {
         "qunar": [
           {
-            "t": "2026-10-31 22:28:18",
+            "t": "2026-11-01 07:24:15",
             "v": 330.0
           }
         ],
         "tongcheng": [
           {
-            "t": "2026-10-31 22:28:58",
-            "v": 330.0
-          }
-        ]
-      },
-      "2026-12-13": {
-        "tongcheng": [
-          {
-            "t": "2026-10-31 22:28:38",
+            "t": "2026-11-01 07:25:09",
             "v": 330.0
           }
         ]
       }
     },
-    "generated_at": "2026-10-31T22:29:54.499189Z"
+    "generated_at": "2026-11-01T07:26:09.329296Z"
   }
 }
