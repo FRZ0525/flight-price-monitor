@@ -7,23 +7,23 @@
         "name": "CAN"
       },
       "to": {
-        "code": "HGH",
-        "name": "HGH"
+        "code": "CAN",
+        "name": "CAN"
       },
       "depart_dates": [
         "2026-12-13",
         "2026-12-14"
       ],
       "return_dates": [
-        "2026-12-11",
-        "2026-12-12"
+        "2026-12-13",
+        "2026-12-14"
       ],
       "platforms": [
         "qunar",
         "tongcheng"
       ],
       "threshold": 0,
-      "query_time": "2026-11-13 07:51:56"
+      "query_time": "2026-11-13 20:34:07"
     },
     "results": [
       {
@@ -36,7 +36,7 @@
         "flight_no": "",
         "depart_time": "",
         "arrive_time": "",
-        "fetched_at": "2026-11-13 07:44:40"
+        "fetched_at": "2026-11-13 20:27:16"
       },
       {
         "platform": "tongcheng",
@@ -48,19 +48,19 @@
         "flight_no": "",
         "depart_time": "",
         "arrive_time": "",
-        "fetched_at": "2026-11-13 07:45:01"
+        "fetched_at": "2026-11-13 20:27:43"
       },
       {
         "platform": "tongcheng",
         "from": "HGH",
         "to": "CAN",
         "date": "2026-12-12",
-        "price": 450.0,
+        "price": 429.0,
         "airline": "",
         "flight_no": "",
         "depart_time": "",
         "arrive_time": "",
-        "fetched_at": "2026-11-13 07:45:21"
+        "fetched_at": "2026-11-13 20:28:08"
       },
       {
         "platform": "qunar",
@@ -72,7 +72,7 @@
         "flight_no": "",
         "depart_time": "",
         "arrive_time": "",
-        "fetched_at": "2026-11-13 07:50:46"
+        "fetched_at": "2026-11-13 20:33:06"
       },
       {
         "platform": "qunar",
@@ -84,7 +84,7 @@
         "flight_no": "",
         "depart_time": "",
         "arrive_time": "",
-        "fetched_at": "2026-11-13 07:51:01"
+        "fetched_at": "2026-11-13 20:33:19"
       },
       {
         "platform": "tongcheng",
@@ -96,7 +96,7 @@
         "flight_no": "",
         "depart_time": "",
         "arrive_time": "",
-        "fetched_at": "2026-11-13 07:51:30"
+        "fetched_at": "2026-11-13 20:33:41"
       },
       {
         "platform": "tongcheng",
@@ -108,7 +108,7 @@
         "flight_no": "",
         "depart_time": "",
         "arrive_time": "",
-        "fetched_at": "2026-11-13 07:51:56"
+        "fetched_at": "2026-11-13 20:34:07"
       }
     ],
     "summary": [
@@ -159,7 +159,7 @@
         "date": "2026-12-12",
         "per_platform": {
           "qunar": 420.0,
-          "tongcheng": 450.0
+          "tongcheng": 429.0
         },
         "min_price": 420.0,
         "best_platform": "qunar",
@@ -172,21 +172,21 @@
       "2026-12-12": {
         "qunar": [
           {
-            "t": "2026-11-13 07:44:40",
+            "t": "2026-11-13 20:27:16",
             "v": 420.0
           }
         ],
         "tongcheng": [
           {
-            "t": "2026-11-13 07:45:21",
-            "v": 450.0
+            "t": "2026-11-13 20:28:08",
+            "v": 429.0
           }
         ]
       },
       "2026-12-11": {
         "tongcheng": [
           {
-            "t": "2026-11-13 07:45:01",
+            "t": "2026-11-13 20:27:43",
             "v": 550.0
           }
         ]
@@ -194,13 +194,13 @@
       "2026-12-13": {
         "qunar": [
           {
-            "t": "2026-11-13 07:50:46",
+            "t": "2026-11-13 20:33:06",
             "v": 450.0
           }
         ],
         "tongcheng": [
           {
-            "t": "2026-11-13 07:51:30",
+            "t": "2026-11-13 20:33:41",
             "v": 450.0
           }
         ]
@@ -208,18 +208,18 @@
       "2026-12-14": {
         "qunar": [
           {
-            "t": "2026-11-13 07:51:01",
+            "t": "2026-11-13 20:33:19",
             "v": 330.0
           }
         ],
         "tongcheng": [
           {
-            "t": "2026-11-13 07:51:56",
+            "t": "2026-11-13 20:34:07",
             "v": 330.0
           }
         ]
       }
     },
-    "generated_at": "2026-11-13T07:52:52.224010Z"
+    "generated_at": "2026-11-13T20:35:07.937357Z"
   }
 }
